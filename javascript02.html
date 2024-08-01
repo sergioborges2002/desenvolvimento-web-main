@@ -44,19 +44,21 @@
 
     <input type="number" id="valor1">
     <input type="number" id="valor2">
-    <button onclick="calcula();">Calcular</button>
+    <button onclick="calcula('+');">+</button>
+    <button onclick="calcula('-');">-</button>
+    <button onclick="calcula('*');">*</button>
+    <button onclick="calcula('/');">/</button>
     <input type="number" id="resultado">
 
     <script>
-        function calcula(){
+        function calcula(operador){
             
             let num1 = Number(document.getElementById('valor1').value);
 
             
             let num2 = Number(document.getElementById('valor2').value);
 
-            let resultado;
-            resultado = num1+num2
+            let resultado = eval(num1 + operador + num2);
 
             document.getElementById("resultado").value = resultado;
 
