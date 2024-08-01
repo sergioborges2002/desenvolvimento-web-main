@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        div {
+            background-color: blue;
+            width: 50px;
+            border: solid;
+            padding: 30px;
+        }
+
+        .estatico {
+            position: static;
+            top: 20px;
+            left: 20px;
+        }
+
+        .relativo {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absoluto {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .fixo {
+            position: fixed;
+            top: 20px;
+            left: 250px;
+        }
+
+        .grudado {
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            background-color: cadetblue;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            border-radius: 5px 5px 5px 5px;
+            border-style: solid;
+            border-width: 5px ;
+        
+        }
+
+        .vermelho {
+            background-color: red;
+            top: 50px;
+            right: 50px;
+        }
+        .verde{
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+        .verde,
+        .vermelho{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="estatico">Estático</div>
+        <div class="relativo">Relativo</div>
+        <div class="absoluto">Fixo</div>
+        <div class="fixo">Grudado</div>
+        <div class="grudado">Absoluto</div>
+    </div>
+    <div class="verde"></div>
+    <div class="vermelho"></div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+:root{
+	--uiFont:duneFont;
+}
+
+@font-face {
+    font-family: duneFont;
+    src: url(Dune_Rise.ttf);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: var(--uiFont);
+    color: silver;
+    font-size: 90%;
+}
+
+body {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0.932);
+
+
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(https://img.odcdn.com.br/wp-content/uploads/2022/03/deserto.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    height: 140%;
+    width: 100%;
+    z-index:-1;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a {
+    font-family: duneFont;
+    text-align: center;
+    display: block;
+    color: silver;
+
+}
+
+.a1 {
+    text-decoration: dashed
+}
+
+.parte-1{
+    width:100%;
+    background-repeat:no-repeat;
+    background-size:auto;
+background-color:rgba(0, 0, 0, 0, 0.932);}
+
+.parte-1:after {
+     content: "";
+      display: block;
+        position: absolute;
+        background-image: url(https://img.odcdn.com.br/wp-content/uploads/2022/03/deserto.jpg);
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        height: 200%;
+        width: 100%;
+        z-index:-1;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;}

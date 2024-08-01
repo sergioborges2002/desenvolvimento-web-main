@@ -1,0 +1,84 @@
+body {
+    background-image: url(https://www.lance.com.br/galerias/wp-content/uploads/2021/05/Messi-no-Flamengo-738x474.jpg);
+    background-size: cover;
+
+}
+
+.skynet {
+    opacity: 1.0;
+}
+
+.skynet:hover {
+    opacity: 0.5;
+}
+
+
+.flamengo {
+    color: white;
+    padding: 10px 30px;
+    background-color: red;
+    border-style: inset;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.flamengo:hover {
+    color: red;
+    background-color: white;
+    border-color:black
+}
+
+.botafogo {
+color: white;
+background-color: rgb(17, 17, 17);
+padding: 10px 30px;
+border-style: inset;
+text-decoration: none;
+border-radius: 10px;
+border-color: white;
+
+}
+
+.botafogo:hover {
+    color: rgb(17, 17, 17);
+    background-color: white;
+    border-color: black;
+}
+.cruzeiro {
+    color: white;
+    background-color: blue;
+    padding: 10px 30px;
+    border-style: inset;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+.cruzeiro:hover {
+    color: blue;
+    background-color: white;
+    border-color: blue;
+}
+
+button {
+    padding: 15px 35px;
+    color: black;
+    background-color: white;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: black;
+    size: 122.3px 44.21px;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(17, 17, 17);
+    color: white;
+    border-color: white;
+
+
+}
