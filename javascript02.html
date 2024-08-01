@@ -40,6 +40,33 @@
 
     <button onclick="alert('Bom dia '+ document.getElementById('texto').value)">Clique aqui</button>
 
+    <h2>Exemplo 2</h2>
+
+    <input type="number" id="valor1">
+    <input type="number" id="valor2">
+    <button onclick="calcula();">Calcular</button>
+    <input type="number" id="resultado">
+
+    <script>
+        function calcula(){
+            
+            let num1 = Number(document.getElementById('valor1').value);
+
+            
+            let num2 = Number(document.getElementById('valor2').value);
+
+            let resultado;
+            resultado = num1+num2
+
+            document.getElementById("resultado").value = resultado;
+
+
+
+            //document.getElementById("resultado").value = Number(document.getElementById('valor1').value) + Number(document.getElementById('valor2').value)
+        }
+    </script>
+    
+
 
 </body>
 </html>
