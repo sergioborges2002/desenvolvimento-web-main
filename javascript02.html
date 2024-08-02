@@ -6,69 +6,99 @@
     <title>Exemplos de JavaScript</title>
 </head>
 <body>
-    <h1>Onde Colocar o JavaScript</h1>
-    <p id="teste1">Olá Mundo</p>
-    <button onclick="document.getElementById('teste1').innerHTML='Olá JavaScript via atributo!'">Clique Aqui</button>
-    <button onclick="mensagem();">Clique Aqui</button>
-
-    <script>function mensagem(){
-        document.getElementById('teste1').innerHTML = 'Olá JavaScript via função!';}</script>
-
-    <button onclick="mensagemExterna()">Clique Aqui</button>
-    <script src="script.js"></script>
-
-    <h1>Mensagens via JavaScript</h1>
-    <h2>Via elemento HTML</h2>
-    <p id="msg"></p>
-    <button onclick="document.getElementById('msg').innerHTML='Olá Mundo!'">Botão 1</button>
-
-    <h2>Via alert</h2>
-
-    <button onclick="alert('Olá Mundo!');">Botão 2</button>
-
-    <h2>Via Console</h2>
-
-    <button onclick="console.log('Olá Mundo!');">Botão 3</button>
-
-    <h2>Via Escrita Direta</h2>
-    
-    <button onclick="document.write('Olá Mundo');">Botão 4</button>
-
-    <h2>Entrada De Informação</h2>
-
-    <input type="text" id="texto">
-
-    <button onclick="alert('Bom dia '+ document.getElementById('texto').value)">Clique aqui</button>
-
-    <h2>Exemplo 2</h2>
-
-    <input type="number" id="valor1">
-    <input type="number" id="valor2">
-    <button onclick="calcula('+');">+</button>
-    <button onclick="calcula('-');">-</button>
-    <button onclick="calcula('*');">*</button>
-    <button onclick="calcula('/');">/</button>
-    <input type="number" id="resultado">
+    <h1>Variáveis e Operadores</h1>
 
     <script>
-        function calcula(operador){
-            
-            let num1 = Number(document.getElementById('valor1').value);
+        /* comentário de bloco */
+        let variavel; // declaração de variável
+        variavel = 3; // atribuição de valor
+        console.log(variavel); // mostra valor no console
+        console.log(typeof variavel); // mostra o tipo de variável
 
-            
-            let num2 = Number(document.getElementById('valor2').value);
+        variavel = "Três";
+        console.log(variavel);
+        console.log(typeof variavel);
 
-            let resultado = eval(num1 + operador + num2);
+        variavel = "2";
+        console.log(variavel);
+        console.log(typeof variavel);
 
-            document.getElementById("resultado").value = resultado;
+        variavel = true;
+        console.log(variavel);
+        console.log(typeof variavel);
 
+        variavel = 2+3;
+        console.log(variavel);
+        console.log(typeof variavel);
 
+        variavel = "2"+"3";
+        console.log(variavel);
+        console.log(typeof variavel);
 
-            //document.getElementById("resultado").value = Number(document.getElementById('valor1').value) + Number(document.getElementById('valor2').value)
-        }
+        variavel = 2 +"3";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 5 -"3";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 5 -"Ch";
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 5 * 3;
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel = 2;
+        variavel = variavel + 1; // incremento
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel++; // variavel = variavel + 1
+        console.log(variavel);
+        console.log(typeof variavel);
+
+        variavel += 3; //variavel = variavel + 3;
+        console.log(variavel);
+
+</script>
+
+<button onclick="fonte(2)">Aumenta</button>
+<button onclick="fonte(-2);">Diminui</button>
+<p id="texto">ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem itaque molestias expedita quisquam cum asperiores fuga unde corrupti eaque, quasi, ut repellendus, laborum porro sunt assumenda iure cumque! Asperiores, incidunt!</p>
+
+<script>
+    let tamanho = 16;
+    function fonte(n){
+        tamanho += n;
+    document.getElementById("texto").style.fontSize = tamanho + "px";
+}
+</script>
+
+<script>
+    variavel = 3 > 2;
+    console.log(variavel);
+    console.log(typeof variavel);
+
+    variavel = 3 < 2;
+    console.log(variavel);
+    console.log(typeof variavel); 
+
+    variavel = 3 == 3;
+    console.log(variavel);
+
+    variavel = 3 >= 3;
+    console.log(variavel);
+
+    variavel = 3 != 3;
+    console.log(variavel);
+
+    variavel = 3 === 3;
+    console.log(variavel);
+    
     </script>
     
-
-
 </body>
 </html>

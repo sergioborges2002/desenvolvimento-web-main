@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Onde Colocar o JavaScript</h1>
+    <p id="teste1">Olá Mundo</p>
+    <button onclick="document.getElementById('teste1').innerHTML='Olá JavaScript via atributo!'">Clique Aqui</button>
+    <button onclick="mensagem();">Clique Aqui</button>
+
+    <script>function mensagem(){
+        document.getElementById('teste1').innerHTML = 'Olá JavaScript via função!';}</script>
+
+    <button onclick="mensagemExterna()">Clique Aqui</button>
+    <script src="script.js"></script>
+
+    <h1>Mensagens via JavaScript</h1>
+    <h2>Via elemento HTML</h2>
+    <p id="msg"></p>
+    <button onclick="document.getElementById('msg').innerHTML='Olá Mundo!'">Botão 1</button>
+
+    <h2>Via alert</h2>
+
+    <button onclick="alert('Olá Mundo!');">Botão 2</button>
+
+    <h2>Via Console</h2>
+
+    <button onclick="console.log('Olá Mundo!');">Botão 3</button>
+
+    <h2>Via Escrita Direta</h2>
+    
+    <button onclick="document.write('Olá Mundo');">Botão 4</button>
+
+    <h2>Entrada De Informação</h2>
+
+    <input type="text" id="texto">
+
+    <button onclick="alert('Bom dia '+ document.getElementById('texto').value)">Clique aqui</button>
+
+    <h2>Exemplo 2</h2>
+
+    <input type="number" id="valor1">
+    <input type="number" id="valor2">
+    <button onclick="calcula('+');">+</button>
+    <button onclick="calcula('-');">-</button>
+    <button onclick="calcula('*');">*</button>
+    <button onclick="calcula('/');">/</button>
+    <input type="number" id="resultado">
+
+    <script>
+        function calcula(operador){
+            
+            let num1 = Number(document.getElementById('valor1').value);
+
+            
+            let num2 = Number(document.getElementById('valor2').value);
+
+            let resultado = eval(num1 + operador + num2);
+
+            document.getElementById("resultado").value = resultado;
+
+
+
+            //document.getElementById("resultado").value = Number(document.getElementById('valor1').value) + Number(document.getElementById('valor2').value)
+        }
+    </script>
+    
+
+
+</body>
+</html>
