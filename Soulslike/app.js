@@ -22,3 +22,5 @@ elmnt.style.backgroundColor = color;
 
 // Get the element with id="defaultOpen" and Click on it 
 document.getElementById("defaultOpen").click()
+
+
