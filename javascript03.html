@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Javascript</title>
+</head>
+<body>
+    <p id="msg"></p>
+
+    <script>
+        const d = new Date();
+        let hora = d.getHours();
+        if (hora<=11){
+            document.getElementById("msg").innerText = "Bom dia!";
+        }
+        else if (hora<=18){
+            document.getElementById("msg").innerText="Boa Tarde!";
+        }
+        else{document.getElementById("msg").innerText="Boa Noite";
+        }
+    </script>
+
+    <p id="msg2"></p>
+
+    
+    
+    <input type="text" id="nota" placeholder="Nota" oninput="valida()">
+    <input type="text" id="freq" placeholder="Frequência" oninput="valida()">
+    <button id="btn" onclick="resultado();" disabled>Resultado</button>
+
+
+    <script>
+        function valida(){
+            let nota = document.getElementById("nota").value;
+            let freq = document.getElementById("freq").value
+            
+            if(nota>=0 && nota<=10 && freq>=0 && freq <=100){
+                document.getElementById("btn").disabled = false;
+               }
+            else{
+                 document.getElementById("btn").disabled = true;
+            }
+        }
+        
+ function resultado(){
+            let nota = document.getElementById("nota").value;
+            let freq = document.getElementById("freq").value;
+            if (nota>=6 && freq>=75){
+                document.getElementById("msg2").innerText = "Você foi aprovado!";
+                
+            }
+            else{
+                document.getElementById("msg2").innerText = "Você foi Reprovado!";
+            }
+           
+           }
+            
+            
+    </script>
+    
+</body>
+</html>
