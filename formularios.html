@@ -7,20 +7,52 @@
     <style>
 
     #h1{
-        text-align: center;
         color: white;
+        position: relative;
+        left: 150px;
     }
 
 
 body{
-    background-color: black;
+    background-color: rgb(44, 43, 43);
 }
 form{
     background-color:white;
     border-radius: 10px 10px 10px 10px;
     padding-left: 20px;
-    
+    width: 40%;
 
+}
+   
+fieldset{
+    border-radius: 10px 10px 10px 10px;
+}
+
+label#info, label#termos{
+   position: relative;
+   left: 5px;
+
+}
+#info, #termos{
+    position: relative;
+    left: 5px;
+}
+
+#pf,#pj{
+    position: relative;
+    left: -5px;
+}
+
+#senha{
+    position: relative;
+    left:4px;
+}
+
+#image{
+    position: relative;
+    top: -37px;
+    left: 240px;
+}
     </style>
 
 </head>
@@ -28,7 +60,7 @@ form{
     <h1 id="h1">Formulário</h1>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
 <fieldset>
-      <label for="nome"><span class="destaque">*</span>Nome:</label>
+      <label for="nome">Nome:</label>
        <input id="nome" name="nome" type="text"  placeholder="Nome" required>
 
        <br>
@@ -47,13 +79,13 @@ form{
        <input type="date" id="nasc" name="nasc">
        <br>
     </fieldset>
-       <label for="termos">Li e acerto os termos da página.</label>
+       <label  id="termos"for="termos">Li e acerto os termos da página.</label>
        <input type="checkbox" name="termos" id="termos">
        <br>
-       <label for="info">Desejo receber os informativos.</label>
+       <label id="info" for="info">Desejo receber os informativos.</label>
        <input type="checkbox" name="info" id="info">
        <br>
-    <input type="image" src="https://upload.wikimedia.org/wikipedia/pt/a/ac/CRVascodaGama.png" width="60px" id="image" id="img">
+    <input type="image" src="https://upload.wikimedia.org/wikipedia/pt/a/ac/CRVascodaGama.png" width="30px" id="image">
     </form>
   
 
