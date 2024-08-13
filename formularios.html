@@ -17,8 +17,8 @@ body{
     width: 100%;
     background-repeat: no-repeat;
     background-size: auto;
-    background: rgba(0, 0, 0, 0.93);
-    overflow:hidden;
+    background: rgba(0, 0, 0, 0.932);
+    overflow-x: hidden;
 }
 
 body:after{
@@ -31,17 +31,18 @@ body:after{
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1%;
+    z-index: -1;
     background-size: cover;
     background-attachment:fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 form{
     background-color:white;
     border-radius: 10px 10px 10px 10px;
+    padding-left: 20px;
     width: 40%;
-    position: relative;
-    left:40px;
 
 }
    
@@ -74,29 +75,19 @@ label#info, label#termos{
     top: -37px;
     left: 240px;
 }
-
-#gif{
-    width: 20%;
-    height:20%;
-    position: relative;
-    left: 600px;
-    bottom: 200px;
-    
-}
     </style>
 
 </head>
 <body>
-    
     <h1 id="h1">Formulário</h1>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
 <fieldset>
       <label for="nome">Nome:</label>
-       <input id="nome" name="nome" type="text"  placeholder="Nome" required>
+       <input id="nome" name="nome" type="text"  placeholder="Nome">
 
        <br>
-       <input type="radio" id="pf" name="tipo" value="pf" required><label for="pf">Pessoa Física</label>
-       <input type="radio" id="pj" name="tipo" value="pj" required><label for="pj">Pessoa Jurídica</label>
+       <input type="radio" id="pf" name="tipo" value="pf" ><label for="pf">Pessoa Física</label>
+       <input type="radio" id="pj" name="tipo" value="pj"><label for="pj">Pessoa Jurídica</label>
        <br>
     </fieldset>
     <fieldset>
@@ -118,7 +109,7 @@ label#info, label#termos{
        <br>
     <input type="image" src="https://upload.wikimedia.org/wikipedia/pt/a/ac/CRVascodaGama.png" width="30px" id="image">
     </form>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDR6duTQpH0keyxiFRYOFwtSTwFxM5Y_SH3njYUeCd2EAwWzUKX9X5Mn-5iR8AdoNAEuIrh4frBOY6JW8NPfqtavE2Fxe7ZQUT6UxImV-P1Jhe5RWQpuoMwqfi81soGFnqSoSt2o7rH659/s1600/vascoropitti.gif" alt="gif" id="gif">
+  
 
 <script>
    

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach</title>
+    <style>
+        :root{
+            --uiFont:bleachFont;
+        }
+        @font-face {
+            font-family:bleachFont;
+            src: url();
+        }
+        body{
+            font-family: var(--uiFont);
+            background-color: rgba(0, 0, 0, 0.932);
+            background-size: auto;
+            
+        }
+        body::after{
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZThlOTJiMTUtMjcyNC00YjhkLTk4ZDItOWQxZTI0YjZlMWQzXkEyXkFqcGdeQXVyMTU2Mjg2NjE2._V1_.jpg);
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+        button{
+            font: var(--uiFont);
+            border-radius: 5px;
+            background-color: gray;
+            color: black;
+            position: relative;
+            left: 600px;
+            bottom: -400px;
+            padding: 25px 25px 25px 25px;
+
+           
+        }
+    </style>
+</head>
+<body>
+    <button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Login</button>
+    <button onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Registrar</button>
+
+    
+</body>
+<script>
+   // Get the modal
+   var modal = document.getElementById('id01');
+
+   // When the user clicks anywhere outside the modal, close it
+   window.onclick = function(event){
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+   }
+</script>
+</html>
