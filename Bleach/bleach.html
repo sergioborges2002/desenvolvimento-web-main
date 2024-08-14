@@ -52,6 +52,7 @@
         font-size: 20px;
         font-style: italic;
         font-family: "Bungee Tint";
+        border-radius: 15px;
     }
 
     button:hover{
@@ -132,9 +133,18 @@
         color:red;
         cursor: pointer;
     }
+    .close2 {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: black;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
 /* Add zone Animation */
 .animate{
-    animation: animatezoom 0.6s;
+    animation: animatezoom 5s;
 }
 
 @keyframes animatezoom {
@@ -161,6 +171,8 @@ label{
 </head>
 <body>
     <button onclick="document.getElementById('id01').style.display='block'" style="width: auto; top: 350px; position: absolute; left: 600px;">Se torne um ceifeiro de almas</button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;
+    position: absolute; top: 460px; left:660px">Enter Soul Society</button>
 
 <div id="id01" class="modal">
     
@@ -180,9 +192,6 @@ label{
         <label for="psw"><b>Zanpakuto</b></label>
         <input type="password" placeholder="Enter Your Zanpakuto" name="psw" required>
         <button type="submit">Shinigami</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember">Remember me
-        </label>
        </div>
 
        <div class="container" style="background-color: #363e4b;">
@@ -192,12 +201,29 @@ label{
     </form>
 </div> 
 <div id="id02" class="modal">
-    <form class="modal-content" 
+    <form class="modal-content animate" 
     method="post">
     <div class="imgcontainer">
         <span onclick="document.getElementById('id02').style.display='none'"
-        class="close" title="Close Modal"></span>
+        class="close2" title="Close Modal"></span>
+        <img src="Ep380SeireiteiShakonmaku.webp" alt="avatar" class="avatar">
     </div>
+
+    <div class="container">
+        <label for="bankai"><b>Bankai</b></label>
+        <input type="text" placeholder="Enter Your Bankai" name="bankai" required>
+        <button type="submit">Welcome to Soul Society</button>
+        <label>
+            <input type="checkbox" checked="checked"
+            name="remember">Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#363e4b;">
+    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+<span class="psw">Forgot <a href="#">Bankai?</a></span>
+</div>
+    </form>
 </div>
     
     <script>
@@ -212,6 +238,11 @@ label{
          }
         }
         
+        window.onclick = function(event){
+            if (event.target == modal2) {
+                modal.style.display == "none";
+            }
+        }
         
      </script>
      <div id="bg"></div>
