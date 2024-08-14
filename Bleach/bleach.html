@@ -116,6 +116,8 @@
         width: 80%; /* Could be more or less, depending on screen size */
     }
 
+    
+
     /* The Close Button (x)*/
     .close {
         position: absolute;
@@ -158,11 +160,11 @@ label{
 </style>
 </head>
 <body>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto; top: 350px; position: absolute; left: 450px;">Se torne um ceifeiro de almas</button>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto; top: 350px; position: absolute; left: 600px;">Se torne um ceifeiro de almas</button>
 
 <div id="id01" class="modal">
     
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <form class="modal-content animate" method="post">
        <div class="imgcontainer">
         <span
         onclick="document.getElementById('id01').style.display='none'"
@@ -189,10 +191,19 @@ label{
       </div>
     </form>
 </div> 
+<div id="id02" class="modal">
+    <form class="modal-content" 
+    method="post">
+    <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'"
+        class="close" title="Close Modal"></span>
+    </div>
+</div>
     
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
      
         // When the user clicks anywhere outside the modal, close it
         window.onclick = function(event){
@@ -200,7 +211,8 @@ label{
              modal.style.display = "none";
          }
         }
- 
+        
+        
      </script>
      <div id="bg"></div>
 </body>
