@@ -14,7 +14,11 @@
             width: 1200px;
             height: 800px;
         }
-    
+    #tunel{
+        width: 130%;
+        height: 100%;
+        
+    }
 
 #bg{
     background-image: url(the-full-key-visual-for-bleach-tybw-the-separation-v0-ifguzaidwgkb1.webp);
@@ -198,8 +202,8 @@ label{
 </style>
 </head>
 <body>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto; top: 350px; position: absolute; left: 600px;">Se torne um ceifeiro de almas</button>
-    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;
+    <button id="btn1" onclick="document.getElementById('id01').style.display='block'" style="width: auto; top: 350px; position: absolute; left: 600px;">Se torne um ceifeiro de almas</button>
+    <button id="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;
     position: absolute; top: 460px; left:660px">Enter Soul Society</button>
 
 <div id="id01" class="modal">
@@ -241,7 +245,7 @@ label{
     <div class="container">
         <label for="bankai"><b>Bankai</b></label>
         <input type="text" placeholder="Enter Your Bankai" name="bankai" required>
-        <button type="submit">Welcome to Soul Society</button>
+        <button type="submit" onclick="tunel()">Welcome to Soul Society</button>
         <label>
             <input type="checkbox" checked="checked"
             name="remember">Remember me
@@ -254,7 +258,8 @@ label{
 </div>
     </form>
 </div>
-    
+        <img id="tunel" src="tunel.gif" style="display: none;">
+
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
@@ -271,6 +276,14 @@ label{
              modal2.style.display = "none";
          }
         }
+function tunel(){
+    document.getElementById('tunel').style.display="block";
+    document.getElementById('id01').style.display="none";
+    document.getElementById('id02').style.display="none";
+    document.getElementById('bg').style.display="none";
+    document.getElementById('btn1').style.display="none";
+    document.getElementById('btn2').style.display="none";
+}
     
         
      </script>
