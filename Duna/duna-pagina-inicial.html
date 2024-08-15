@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="duna.css"></link>
 	<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSCWxHOJBsc3Xfgp_HcFGl4R0LeWaVa_95A&s"
         type="image/x-icon">
+        <script src="duna.js"></script>
 	</head>
 	<body>
-	<div class="pagina-inicial">
-    <a class="logo" href="duna-pagina-inicial.html"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Dune_2021_transparent_logo.png">
+	<div class="pagina-inicial" id="duna_paginainicial"></div>
+    <a class="logo" onclick="duna_paginainicial()"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Dune_2021_transparent_logo.png">
     </a>
-<a class="filmes" href="duna-filmes.html">Filmes</a>
-<a class="livros" href="duna-livros.html">Livros</a>
-</div>
+<a id="filmes" onclick="duna_filmes()">Filmes</a>
+<br>
+<a id="livros" onclick="duna_livros()">Livros</a>
+
+
+<div class="filmes" id="duna_filmes"></div>
+<a id="duna1984" onclick="duna1984()" style="display: none;">Duna (1984)</a>
+<a id="dunaparte1" onclick="dunaparte1()" style="display: none;">Duna Parte 1 (2021)</a>,
+<a id="dunaparte2" onclick="dunaparte2()" style="display: none;">Duna Parte 2 (2024)</a>
+
     
 </body>
 </html>
