@@ -1,6 +1,6 @@
 function duna_filmes() {
     document.getElementById('duna_filmes').style.display="block";
-    document.getElementById('duna_paginainicial').style.display="none";
+    document.getElementById('pagina-inicial').style.display="none";
     document.getElementById('filmes').style.display="none";
     document.getElementById('livros').style.display="none";
     document.getElementById('dunaparte1').style.display="block";
@@ -9,7 +9,7 @@ function duna_filmes() {
 }
 
 function duna_paginainicial() {
-    document.getElementById('duna_paginainicial').style.display="block";
+    document.getElementsById('pagina-inicial').style.display="block";
     document.getElementById('duna_filmes').style.display="none";
     document.getElementById('duna1984').style.display="none";
     document.getElementById('dunaparte1').style.display="none";
