@@ -94,8 +94,7 @@
         }
 
         #btn{
-            height: 250px;
-            width: 200px;
+            transition: 0.5s,;
         }
     </style>
 </head>
@@ -114,22 +113,30 @@
             <a href="#">Sobre</a>
         </div>
         <div id="main">
-            <span style="font-size: 30px;cursor:pointer;
-            position: absolute; top: 30px; left: 30px;" onclick="openNav()">&#9776;</span></div>
+            <span id="btn" style="font-size: 30px;cursor:pointer;
+            position: absolute; top: 30px; left: 30px;transition: ease;" onclick="openNav()">&#9776;</span></div>
 
 </header>
     <script>                                               
         function openNav(){
             document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("header").style.marginLeft = "250px";
+        document.getElementById("btn").style.left="250px";
+        document.getElementById("btn").style.transition="left ease-out .5s";
+        
+        
     
         
     }
 
-        function closeNav(){
+        function closeNav(element){
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("header").style.marginLeft = "0";
+            document.getElementById("btn").style.left="30px"
+            document.getElementById("btn").style.transition = "ease-in .3.5s";
             }
+            
+
         
             
     </script>
