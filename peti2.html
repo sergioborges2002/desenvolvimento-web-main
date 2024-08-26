@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kauan da loh, cerjo da muie dele, e eseguieu da karou</title>
+    <title>help cão</title>
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sans-comic-sans">
     <style>
         *{
-            padding: 0px;
+           box-sizing: border-box;
             margin: 0px;
            font-size: 18px;
            
@@ -28,19 +28,22 @@
     .bar1, .bar2, .bar3{
 width: 35px;
 height: 5px;
+position: relative;
+top: -50px;
 background-color: #333;
 margin: 6px 0;
 transition: 0.4s;
     }
     header{
+        justify-content: space-around;
         align-items: center;
-        font-size: 45px;
-        background-color: rgb(144, 194, 241, 0.705);
-        height: 70px;
+        font-size: 45px; 
+        background-color: rgba(17, 84, 146, 0.705);
+        height: 110px;
         color: whitesmoke;
         padding: 20px;
-        background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,230,247,1) 100%);
+        background: rgb(95, 182, 146);
+        background: linear-gradient(90deg, rgb(93, 174, 164) 0%, rgb(126, 219, 237) 100%);
         
     }
     nav{
@@ -59,7 +62,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,230,247,1) 100%);
         transform: translate(0, -11px) rotate(45deg);
     }
 
-    
+    .show {
+        display: block;
+    }
         
 #dropdown{
         position: relative;
@@ -71,12 +76,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,230,247,1) 100%);
         position: absolute;
         background-color: beige;
         color: black;
+        width: 350px;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
 
-    .dropdown-content a {
+    #dropdown-content a {
         color: black;
         padding: 12px 16px;
         display: block;
@@ -96,14 +102,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,230,247,1) 100%);
 <header id="myCanvas">
 <h1>Help cão</h1>
 <nav>
-<div id="dropdown">
-  <div id="dropdown-content">
-    <a href="#">Cães</a>
-    <a href="#">Gatos</a>
-    <a href="#">Tartarugas</a>
-  </div>
-</div>
 <div class="container" onclick="menu(this)">
+    <div id="dropdown">
+        <div id="dropdown-content">
+          <a href="#">Cães</a>
+          <a href="#">Gatos</a>
+          <a href="#">Tartarugas</a>
+        </div>
+      </div>
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
@@ -119,8 +125,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,230,247,1) 100%);
 <script>
     function menu(x){
         x.classList.toggle("change");
-        }
-
+        document.getElementById('dropdown-content').style.display="block";
+    }
+    
 </script>
 </body>
 </html>
